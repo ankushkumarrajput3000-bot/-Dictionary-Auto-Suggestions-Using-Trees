@@ -1,93 +1,203 @@
-# Dictionary with Auto-Suggestions 
+# 📖 Dictionary with Auto-Suggestions
+### ⚡ A Smart Dictionary Application Using Trie Data Structure in C++
 
-A console-based Dictionary Application developed in **C++** using the **Trie (Prefix Tree) Data Structure**.
+<p align="center">
+  <img src="https://img.shields.io/badge/Language-C++-blue?style=for-the-badge&logo=cplusplus" />
+  <img src="https://img.shields.io/badge/Concept-Trie%20Data%20Structure-orange?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Project-DSA-green?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Status-Completed-success?style=for-the-badge" />
+</p>
 
-## About the Project
+<p align="center">
+  <b>🔍 Search smarter. Type less. Discover words faster!</b>
+</p>
 
-This project implements a simple dictionary that allows users to insert words, search for complete words, display all stored words, and receive auto-suggestions based on a given prefix.
+---
 
-It uses a Trie data structure to make prefix-based searching efficient.
+## 🌟 About The Project
 
-## Features
+**Dictionary with Auto-Suggestions** is a console-based application developed using **C++** that demonstrates the practical implementation of the **Trie (Prefix Tree) Data Structure**.
 
-- Insert new words into the dictionary.
-- Search for a complete word.
-- Generate auto-suggestions based on a prefix.
-- Display all stored words.
-- Case-insensitive word handling.
-- Menu-driven console interface.
+Unlike traditional dictionaries, this application provides word suggestions while searching based on the prefix entered by the user.
 
-## Data Structures and Concepts Used
+The project demonstrates how Trie can efficiently manage words and perform prefix-based searching.
 
-- Trie Data Structure
-- Pointers
-- Recursion
-- DFS (Depth First Search)
-- Hash Maps (`unordered_map`)
-- Vectors
-- String Manipulation
-- Sorting Algorithms
+## ✨ Key Features
 
-## Time Complexity
+| Feature | Description |
+|---|---|
+| ➕ Insert Word | Add new words to the dictionary |
+| 🔎 Search Word | Check whether a complete word exists |
+| 💡 Auto-Suggestions | Generate suggestions based on a prefix |
+| 📚 Display All | Display all stored dictionary words |
+| 🔡 Case Insensitive | Supports uppercase and lowercase English input |
+| 🖥️ Interactive Menu | Simple menu-driven console interface |
+
+## 🧠 Data Structure Used — Trie
+
+A **Trie** is a tree-like data structure used to store and retrieve strings efficiently.
+
+Each node represents a character, and words with common prefixes share the same path.
+
+### Example
+
+Suppose the dictionary contains:
+
+- Apple
+- Application
+- Apply
+- Appointment
+- Banana
+
+Searching with the prefix `app` generates:
+
+```text
+Input: app
+
+Suggestions:
+  1. apple
+  2. application
+  3. appointment
+  4. apply
+```
+
+## ⚙️ How It Works
+
+```text
+             START
+               |
+          Create Trie
+               |
+        Insert Dictionary Words
+               |
+          Display Menu
+               |
+     +---------+---------+
+     |         |         |
+   Insert    Search   Auto-Suggest
+     |         |         |
+  Add Word  Check Word  Enter Prefix
+     |         |         |
+     +---------+---------+
+               |
+          Display Result
+               |
+          Continue / Exit
+```
+
+## ⏱️ Time Complexity Analysis
+
+Let:
+- `L` = Length of the word
+- `P` = Length of the prefix
 
 | Operation | Time Complexity |
 |---|---|
 | Insertion | O(L) |
 | Exact Search | O(L) |
 | Prefix Lookup | O(P) |
-| Suggestions | Depends on subtree size |
+| Suggestion Listing | Depends on subtree size |
 
-Where L is the word length and P is the prefix length.
+## 🛠️ Technologies & Concepts
 
-## Technologies Used
+**Programming Language**
+- C++
 
-- Language: C++
-- Compiler: GCC / G++
-- IDE: VS Code / Code::Blocks
+**Libraries**
+- `iostream`
+- `unordered_map`
+- `vector`
+- `string`
+- `algorithm`
 
-## How to Run
+**DSA Concepts**
+- Trie Data Structure
+- Tree Traversal
+- Depth First Search (DFS)
+- Recursion
+- Hash Maps
+- Pointers
+- String Manipulation
 
-1. Clone this repository:
+## 🚀 Getting Started
 
-   ```bash
-   git clone https://github.com/YOUR-USERNAME/Dictionary-Auto-Suggestions-Using-Trie.git
-   ```
+Follow these steps to run the project locally.
 
-2. Open the project folder.
+### 1. Clone the Repository
 
-3. Compile the program:
+```bash
+git clone https://github.com/YOUR-USERNAME/Dictionary-Auto-Suggestions-Using-Trie.git
+```
 
-   ```bash
-   g++ main.cpp -o dictionary
-   ```
+### 2. Navigate to the Project Folder
 
-4. Run the program:
+```bash
+cd Dictionary-Auto-Suggestions-Using-Trie
+```
 
-   ```bash
-   ./dictionary
-   ```
+### 3. Compile the Program
 
-   On Windows:
+```bash
+g++ main.cpp -o dictionary
+```
 
-   ```bash
-   dictionary.exe
-   ```
+### 4. Run the Application
 
-## Future Enhancements
+**Windows:**
+```bash
+dictionary.exe
+```
 
-- File-based permanent storage.
-- Graphical User Interface (GUI).
-- Word deletion functionality.
-- Suggestion ranking by frequency.
-- Spell correction.
+**Linux / macOS:**
+```bash
+./dictionary
+```
 
-## Authors
+## 📸 Application Preview
 
-- Arun
-- Ankush Kumar Rajput
+_Add screenshots of your program's terminal output here._
 
-## Project Type
+<!-- Example:
+![Application Output](screenshots/output.png)
+-->
 
-Academic Project – Data Structures and Algorithms (DSA)
+## 🔮 Future Improvements
 
-**Language:** C++
+- 💾 Permanent storage using file handling.
+- 🎨 Graphical User Interface (GUI).
+- 🗑️ Word deletion functionality.
+- 📊 Suggestion ranking based on word frequency.
+- ✍️ Spell correction and typo detection.
+- 🌐 Support for multiple languages.
+
+## 📂 Project Structure
+
+```text
+Dictionary-Auto-Suggestions-Using-Trie/
+│
+├── main.cpp
+├── README.md
+├── Dictionary_Auto_Suggestions_Project_Report.pdf
+└── screenshots/
+    └── output.png
+```
+
+## 👨‍💻 Project Contributors
+
+**Arun**
+
+**Ankush Kumar Rajput**
+
+🎓 Bachelor of Engineering – Computer Science & Engineering
+
+📚 Academic Project | Data Structures & Algorithms
+
+---
+
+## ⭐ Support
+
+If you find this project interesting or helpful, consider giving this repository a ⭐ on GitHub!
+
+<p align="center">
+  <b>Made with ❤️ using C++ and Data Structures</b>
+</p>
