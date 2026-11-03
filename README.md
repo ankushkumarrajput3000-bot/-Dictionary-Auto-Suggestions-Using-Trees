@@ -1,4 +1,4 @@
-# Dictionary with Auto-Suggestions Using Trie
+# Dictionary with Auto-Suggestions 
 
 A console-based Dictionary Application developed in **C++** using the **Trie (Prefix Tree) Data Structure**.
 
